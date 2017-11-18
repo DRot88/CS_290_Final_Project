@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Common Interview Questions</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/prism.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <nav id="topNav">
+          <div class="Navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#dataStructures">Data Structures</a></li>
+              <li><a href="interviewQuestions.html">Interview Questions</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="body">
+        <h3>Common Interview Questions</h3>
+        <ul id='questions'>
+          <li><a href="#fizzBuzz">Fizz Buzz</a></li>
+          <li><a href="#tempConvert">Temperature Conversion</a></li>
+          <li><a href="#fibonacci">Fibonacci Sequence</a></li>
+        </ul>
+
+        <div class="box">
+          <div id="fizzBuzz">
+            <h3>Fizz Buzz</h3>
+            <p>In this section, we will discuss an extremely common interview question, known as "Fizz Buzz."</p>
+            <p>The general idea of this is to develop an algorithm that counts from 1 to some arbitrarily chosen number. The caveat being that
+              every number divisible by 3 is replaced with the word <em>Fizz</em>, every number divisibile by 5 is replaced with the
+              word <em>Buzz</em> and every number divisible by both 3 and 5 replaced with the word <em>FizzBuzz</em>. </br></br>The answer here is show in <em>JavaScript.</em></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <pre><code class="language-javascript">var user_input = prompt("How many items would you like to see for the FizzBuzz game?");
+var FizzBuzz = [];
+var x = 1;
+while (x <= user_input) {
+  if ((x % 3 == 0) && (x % 5 == 0)) {
+    FizzBuzz.push("FizzBuzz");
+  } else if (x % 3 == 0) {
+    FizzBuzz.push("Fizz");
+  } else if (x % 5 == 0) {
+    FizzBuzz.push("Buzz");
+  } else {
+    FizzBuzz.push(x);
+  }
+  x += 1;
+}
+
+alert(FizzBuzz);</code></pre>
+        </div>
+
+        <br class="clear" />
+
+         <div class="box">
+          <pre><code class="language-ruby">var celcius_temp = prompt("Please enter degrees in Celcius:");
+var fahr_temp = ((celcius_temp * 9)/5 + 32);
+
+alert(celcius_temp + " degrees Celcius is equivelent to " + 
+     fahr_temp + " degrees Fahrenheit.");</code></pre>
+        </div>        
+
+        <div class="box">
+          <div id="tempConvert">
+            <h3>Temperature Conversion</h3>
+            <p>
+              This program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.</br></br>The answer here is show in <em>JavaScript.</em>
+            </p>  
+          </div>
+        </div>
+
+        <br class="clear" />
+
+        <div class="box">
+          <div id="fibonacci"> 
+            <h3>Fibonacci Sequence</h3>
+               <p>
+                This program will prompt the user for a number, <em>n</em>, which will be used as a limit for the amount of iterations in the fibonacci sequence. The sequence of numbers will be printed to the console, ending after the <em>n<sup>th</sup></em> iteration.
+                <p> The fibonacci sequnece is a series of numbers where each new number in the sequence is equal to the sum of the prior two numbers in the series.</p></br></br>The answer here is show in <em>JavaScript.</em>
+              </p>  
+          </div>
+        </div>
+
+         <div class="box">
+          <pre><code class="language-ruby">var num1 = 0;
+var num2 = 1;
+var num3;
+ 
+var limit = prompt("Enter the maximum fibonacci iterations you would like to see");
+console.log(num1);
+console.log(num2);
+
+for(var i=3; i <= limit; i++)
+{
+  num3 = num1 + num2;
+  num1 = num2;
+  num2 = num3;
+
+  console.log(num3);
+}</code></pre>
+        </div> 
+      </div>
+
+        <br class="clear" />
+        <br class="clear" />
+      <div id="footer">
+        <footer>
+            <p><a href="#topNav">Back to Top</a></p>
+        </footer>
+      </div>
+    </div>
+
+      <script type="text/javascript" src="script/mainScript.js"></script>
+      <script type="text/javascript" src="script/prism.js"></script>
+  </body>
+</html>
