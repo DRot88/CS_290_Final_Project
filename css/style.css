@@ -1,5 +1,10 @@
 body {
-  background: #F0E9BD;
+  background: url("../images/grey_pattern.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
 }
 
 ::selection {
