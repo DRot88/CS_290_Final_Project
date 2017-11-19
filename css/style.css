@@ -1,5 +1,5 @@
 body {
-  background: #F6FCE6;
+  background: #F0E9BD;
 }
 
 ::selection {
@@ -36,6 +36,10 @@ div {
   display: block;
 }
 
+i {
+  font-weight: bold;
+}
+
 nav li {
     display: inline-block;
     font-size: 16px;
@@ -61,7 +65,7 @@ body {
 }
 
 #header {
-   background: #D9FCF4;
+   background: #A2C087;
    padding:6px;
 }
 
@@ -78,7 +82,7 @@ footer {
    position:absolute;
    bottom: -30px;
    width: 100%;
-   background:#D9FCF4;
+   background:#A2C087;
 }
 
 footer p {
@@ -94,4 +98,50 @@ footer a {
 
 h1 {
   text-align: center;
+}
+
+/*found 'perfect background image on css-tricks*/
+.about-container { 
+    background: url("../images/nightLights.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+}
+
+.about {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about h1, h2 {
+  color: white;
+}
+
+#me {
+  height: 150px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  margin-top: 40px;
+}
+
+#bio {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: .8;
+}
+
+h3 {
+  padding-left: 10px;
+}
+
+.explanation {
+  padding-left: 10px;
+  text-align: left;
 }
