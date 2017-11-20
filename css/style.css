@@ -12,13 +12,13 @@ body {
 }
 
 a:hover {
-  color:#E86800;
+  color: blue;
   font-size: 20px;
 }
 
 #topNav {
   text-align: center;
-  padding: 10px;
+  padding: 6px;
 }
 
 em {
@@ -50,7 +50,7 @@ nav li {
     font-size: 16px;
     width: 100px;
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 6px;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -70,12 +70,16 @@ body {
 }
 
 #header {
-   background: #A2C087;
-   padding:6px;
+   background: #87cc72;
+   opacity: .7;
 }
 
 #header a {
   color: black;
+}
+
+#header a:hover {
+  color: blue;
 }
 
 #body {
@@ -87,7 +91,8 @@ footer {
    position:absolute;
    bottom: -30px;
    width: 100%;
-   background:#A2C087;
+   background:#87cc72;
+   opacity: .7;
 }
 
 footer p {
@@ -149,4 +154,8 @@ h3 {
 .explanation {
   padding-left: 10px;
   text-align: left;
+}
+
+button a {
+  color: white;
 }
