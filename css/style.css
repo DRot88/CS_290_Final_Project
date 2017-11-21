@@ -29,8 +29,10 @@ em {
 .box {
   float: left;
   width: 42.5%;
+  height: 20em;
   margin-left: 5%;
   margin-top: 80px;
+  overflow: scroll;
 }
 
 .clear {
@@ -145,7 +147,7 @@ h1 {
   font-size: 14px;
   font-weight: bold;
   opacity: .8;
-}
+}`
 
 h3 {
   padding-left: 10px;
@@ -158,4 +160,15 @@ h3 {
 
 button a {
   color: white;
+}
+
+#intro {
+  text-align: center;
+  height: 50px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
 }
